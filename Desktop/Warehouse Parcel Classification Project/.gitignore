@@ -1,0 +1,101 @@
+# ================================
+# Warehouse Parcel Classification Project
+# .gitignore pour Machine Learning / Computer Vision
+# ================================
+
+# ----- Modèles pré-entraînés et poids (très lourds) -----
+*.pt
+*.pth
+*.h5
+*.onnx
+*.tflite
+*.pkl
+*.joblib
+*.weights
+
+# ----- Datasets et fichiers de données lourds -----
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+dataset_augmented/
+*.mp4
+*.avi
+*.mov
+*.mkv
+sam_vit_*.pth
+
+# ----- Environnements virtuels -----
+yolov8_env/
+mmdet3d_env/
+venv/
+env/
+ENV/
+.venv/
+
+# ----- Résultats d'entraînement -----
+runs/
+wandb/
+mlruns/
+lightning_logs/
+*.log
+
+# ----- Cache et fichiers temporaires -----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ----- Jupyter Notebook -----
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ----- IDE et éditeurs -----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ----- Système d'exploitation -----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ----- Fichiers de sortie spécifiques -----
+output_*.jpg
+output_*.png
+predicted_*.jpg
+*.csv
+
+# ----- Fichiers de configuration locaux -----
+.env
+.env.local
+config_local.py
+
+# ----- Dossiers de build/compilation -----
+build/
+dist/
+*.egg-info/
+
+# Garder ces fichiers importants (exception) :
+!train.py
+!train.ipynb  
+!train_standalone.py
+!test.py
+!dim.py
+!dimimg.py
+!*.yaml
+!README.md
+!requirements.txt
